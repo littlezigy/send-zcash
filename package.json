@@ -1,0 +1,27 @@
+{
+  "name": "send_zcash",
+  "version": "1.0.0",
+  "description": "An application for non-crypto savvy users to send zcash to anyone from any fiat currency",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest --runInBand",
+    "dev": "NODE_ENV=development nodemon ./bin/www.js --legacy-watch"
+  },
+  "keywords": [
+    "cryptocurrency",
+    "blockchain",
+    "gitcoin",
+    "hackathon"
+  ],
+  "author": "Adesuwa Dawodu",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.23.1",
+    "node-cron": "^2.0.3",
+    "postgresorm": "^4.8.3",
+    "random-words": "^1.1.1",
+    "zcash": "^0.2.0"
+  }
+}
