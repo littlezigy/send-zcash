@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "jest --runInBand",
-    "dev": "NODE_ENV=development nodemon ./bin/www.js --legacy-watch"
+    "dev": ". ./.env && NODE_ENV=development nodemon ./bin/www.js --legacy-watch"
   },
   "keywords": [
     "cryptocurrency",
@@ -16,6 +16,7 @@
   "author": "Adesuwa Dawodu",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.19.2",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "helmet": "^3.23.1",
