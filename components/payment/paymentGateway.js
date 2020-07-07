@@ -1,6 +1,5 @@
-const { Transaction } = require('./transaction.model');
 
-class Paystack extends Transaction {
+class PaymentGateway {
     constructor() {
     }
 
@@ -35,3 +34,5 @@ class Paystack extends Transaction {
         });
     }
 }
+
+module.exports = { PaymentGateway }
